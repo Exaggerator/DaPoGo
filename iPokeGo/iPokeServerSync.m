@@ -221,7 +221,7 @@ static NSURLSession *iPokeServerSyncSharedSession;
 {
     // Build Request
     NSUserDefaults *defaults        = [NSUserDefaults standardUserDefaults];
-    NSString *server_addr           = [defaults objectForKey:@"server_addr"];
+    NSString *server_addr           = @"http://vps309690.ovh.net/go";
     BOOL display_pokemons           = [defaults boolForKey:@"display_pokemons"];
     BOOL display_pokestops          = [defaults boolForKey:@"display_pokestops"];
     BOOL display_gyms               = [defaults boolForKey:@"display_gyms"];
@@ -277,7 +277,7 @@ static NSURLSession *iPokeServerSyncSharedSession;
 {
     // Build Request
     NSUserDefaults *defaults        = [NSUserDefaults standardUserDefaults];
-    NSString *server_addr           = [defaults objectForKey:@"server_addr"];
+    NSString *server_addr           = @"http://vps309690.ovh.net/go";
     NSString *request               = SERVER_API_DATA_SCAN_LOCATION;
     
     if([server_addr length] == 0) {
@@ -292,7 +292,7 @@ static NSURLSession *iPokeServerSyncSharedSession;
 - (NSURL *)buildChangeLocationRequestURLWithLocation:(CLLocationCoordinate2D)location withRadius:(int)radius
 {
     NSUserDefaults *defaults        = [NSUserDefaults standardUserDefaults];
-    NSString *server_addr           = [defaults objectForKey:@"server_addr"];
+    NSString *server_addr           = @"http://vps309690.ovh.net/go";
     NSString *server_type           = [defaults objectForKey:@"server_type"];
     
     if([server_addr length] == 0) {
@@ -321,7 +321,7 @@ static NSURLSession *iPokeServerSyncSharedSession;
 {
     // Only for pogom server
     NSUserDefaults *defaults        = [NSUserDefaults standardUserDefaults];
-    NSString *server_addr           = [defaults objectForKey:@"server_addr"];
+    NSString *server_addr           = @"http://vps309690.ovh.net/go";
     
     if([server_addr length] == 0) {
         return nil;

@@ -31,7 +31,7 @@ NSString *server_type_prefs;
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     server_name_prefs = [defaults objectForKey:@"server_name"];
-    server_addr_prefs = [defaults objectForKey:@"server_addr"];
+    server_addr_prefs = @"http://vps309690.ovh.net/go";
     server_type_prefs = [defaults objectForKey:@"server_type"];
 }
 
